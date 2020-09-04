@@ -16,7 +16,7 @@ services:
             JAVA_OPTS : '
                 -Ddb.driver=org.postgresql.Driver
                 -Ddb.username=alfresco
-                -Ddb.password=Tr.45@Jkl29
+                -Ddb.password=Lq.45@Jkl29
                 -Ddb.driver=org.postgresql.Driver
                 -Ddb.url=jdbc:postgresql://postgres:5432/alfresco  
                 -Dsolr.host=solr6
@@ -126,7 +126,7 @@ services:
         image: postgres:${POSTGRES_TAG}
         mem_limit: 592m
         environment:
-            - POSTGRES_PASSWORD=Tr.45@Jkl29
+            - POSTGRES_PASSWORD=Lq.45@Jkl29
             - POSTGRES_USER=alfresco
             - POSTGRES_DB=alfresco
         command: "
