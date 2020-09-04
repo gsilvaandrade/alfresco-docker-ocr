@@ -43,22 +43,6 @@ You could need to adjust also the permissions for postgres user inside PostgreSQ
 $ sudo chown -R 999 logs
 Uncomment the lines in your docker-compose.yml for the volumes declaration and your Docker Compose should be ready to use.
 
-Windows volumes
-
-When using Windows, standard Docker Volumes can be used instead of Bind Docker Volumes.
-
-For instance, for an installation in a folder named tmp, following volumes are created.
-
-$ docker volume ls --filter name=tmp_
-DRIVER              VOLUME NAME
-local               tmp_alf-repo-data
-local               tmp_alf-repo-logs
-local               tmp_alf-share-logs
-local               tmp_postgres-data
-local               tmp_postgres-logs
-local               tmp_solr-data
-You need to take care of this volumes for backup and other operations.
-
 In case you want to clean your environment (loosing all the data inside), you can remove all this Docker containers to start from scratch.
 
 For instance, for an installation in a folder name tmp, following command will remove all the information persisted.
